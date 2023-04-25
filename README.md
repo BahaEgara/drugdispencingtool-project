@@ -1,6 +1,7 @@
 # drugdispencingtool-project
 it is a drug dispencing tool that informs users on how they are feeling, prescribing drugs for them and obtaining their personal information which can later be used as reference.
-REQUIREMENTS
+# REQUIREMENTS
+
 Accurate dispensing: The tool must be able to dispense medications accurately, ensuring that the correct dosage and medication is provided to the patient.
 
 Efficient dispensing: The tool should be able to dispense medications efficiently, reducing wait times for patients and improving workflow for healthcare providers.
