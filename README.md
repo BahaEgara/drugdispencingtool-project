@@ -21,3 +21,7 @@ Scalability: The tool should be able to scale up or down as needed to meet the c
 Maintenance and support: The tool should be easy to maintain and provide adequate support to users in case of issues or errors.
 
 These requirements are not exhaustive, and the specific needs and requirements of the drug dispensing tool will depend on the healthcare organization and the patients being served.
+
+# The Entity Relationship Diagram
+
+
