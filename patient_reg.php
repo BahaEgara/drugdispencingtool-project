@@ -19,15 +19,16 @@ $sql = "INSERT INTO Patient (`username`, `pass1`, `fname` ,`lname`, `DOB`, `gend
 
 // insert in database 
    if ($conn->query($sql) === TRUE) {
-  echo "New patient  record created successfully";
+  echo "Registered successfully!! <br><br>";
   }else{
     echo "Registration unsuccessful";
  }
 }else{
-    echo "Password did not match";
+  echo "Password did not match";
 }
-
-
-  
-// Check if the form is submitted
 ?>
+
+<!DOCTYPE html>
+<html>
+  <a href="patient_login.php"><button>Login</button></a>
+</html>

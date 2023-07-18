@@ -13,16 +13,22 @@ $email = $_POST["txtEmail"];
 $phone = $_POST["txtPhone"];
 
 // database insert SQL code
-if($pass1==$pass2){
-$sql = "INSERT INTO Pharmacist (`username`, `pass1`, `fname` ,`lname`, `DOB`, `gender`, `email`, `phone`) VALUES ( '$username','$pass1', '$fname', '$lname' , '$DOB', '$gender', '$email', '$phone')";
+if ($pass1 == $pass2) {
+  $sql = "INSERT INTO Pharmacist (`username`, `pass1`, `fname` ,`lname`, `DOB`, `gender`, `email`, `phone`) VALUES ( '$username','$pass1', '$fname', '$lname' , '$DOB', '$gender', '$email', '$phone')";
 
-// insert in database 
-   if ($conn->query($sql) === TRUE) {
-  echo "New pharmacist record created successfully";
-  }else{
+  // insert in database 
+  if ($conn->query($sql) === TRUE) {
+    echo "Registered succesfully!!";
+  } else {
     echo "Registration unsuccessful";
- }
-}else{
+  }
+} else {
   echo "Password did not match";
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<a href="pharmacist_login.php"><button>Login</button></a>
+
+</html>

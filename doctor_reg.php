@@ -15,16 +15,22 @@ $YOE = $_POST["YOE"];
 
 
 // database insert SQL code
-if($pass1==$pass2){
-$sql = "INSERT INTO Doctor (`username`, `pass1`, `fname` ,`lname`, `DOB`, `gender`, `email`, `phone`, `years_of_experience`) VALUES ( '$username','$pass1', '$fname', '$lname' , '$DOB', '$gender', '$email', '$phone', '$YOE')";
+if ($pass1 == $pass2) {
+  $sql = "INSERT INTO Doctor (`username`, `pass1`, `fname` ,`lname`, `DOB`, `gender`, `email`, `phone`, `years_of_experience`) VALUES ( '$username','$pass1', '$fname', '$lname' , '$DOB', '$gender', '$email', '$phone', '$YOE')";
 
-// insert in database 
-   if ($conn->query($sql) === TRUE) {
-  echo "New doctor record created successfully";
-  }else{
+  // insert in database 
+  if ($conn->query($sql) === TRUE) {
+    echo "Registered successfully!!";
+  } else {
     echo "Registration unsuccessful";
- }
-}else{
+  }
+} else {
   echo "Password did not match";
 }
 ?>
+
+<!DOCTYPE html>
+<html>
+<a href="doctor_login.php"><button>Login</button></a>
+
+</html>
